@@ -6,7 +6,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 95vh;
-    background-image: url('../img/galaxy.jpg');
+    background-image: url('../img/background-space.jpg');
+    /* background: black; */
     background-size: cover;
     color: white;
 }
@@ -25,6 +26,7 @@ a{
     --color-font: #bbbbbb;
     --color-white: #fff;
     --color-black: rgb(22, 22, 22);
+    --color-btn-content: #4e0b68;
 }
 
 /* Header */
@@ -77,6 +79,7 @@ a{
 #content{
     display: flex;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .planet-side{
@@ -96,6 +99,10 @@ a{
     flex-direction: column;
 }
 
+.info{
+    margin-bottom: 35px;
+}
+
 
 .content-side > .info h1{
     font-size: 3.5rem;
@@ -104,12 +111,71 @@ a{
 
 .content-side > .info p{
     color: var(--color-font);
-    width: 75%;
+    width: 60%;
     font-size: 1rem;
     line-height: 24px;
 }
 
+.info > span{
+    color: #bbbbbb;
+}
+.info > span > a{
+    color: var(--color-white);
+    text-decoration: underline;
+}
 
+.content-side > .btn-content {
+    width: 60%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid var(--color-font);
+    border-radius: 2px;
+    font-size: 1.2rem;
+    color: var(--color-font);
+    text-align: center;
+    background: none;
+}
+
+.content-p{
+    width: 60%;
+    height: 150px;
+}
+
+.content-side > .btn-content:hover{
+    background-color: var(--color-btn-content);
+    border: 1px solid var(--color-btn-content);
+}
+
+
+/* Content Cards */
+
+#info-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-item{
+    width: 70%;
+    padding: 0 10px;
+    border: 1px solid var(--color-font);
+    border-radius: 3px;
+}
+
+
+.card-item > h3{
+    font-size: 1rem;
+    margin: 10px;
+    margin-bottom: 5px;
+    color: var(--color-font);
+}
+
+.card-item > span > h1{
+    display: inline-block;
+    font-size: 2.75rem;
+    margin: 10px;
+}
 
 
 

@@ -13,7 +13,7 @@
                 <header id="header"><!--Header Start-->
                     <div class="logo">
                         <a href="#">
-                            <h1 style="color: var(--color-font);">Solaris</h1>
+                            <h1 style="color: var(--color-white);">Solaris</h1>
                             <h4 style="color: #d8d4de">Solar System</h4>
                         </a>
                     </div>
@@ -61,13 +61,21 @@
                 <div class="content-side">
                     <div class="info">
                         <h1>Earth</h1>
-                        <p>
+                        <p class="content-p">
                             O Planeta Terra é um dos planetas que fazem parte do Sistema Solar e é o terceiro planeta mais próximo do Sol. A sua formação ocorreu há bilhões de anos, assim como a existência de vida aqui . Algumas teorias explicam sua origem, como a teoria da nebulosa solar.
                         </p>
+                        <p class="content-p" style="display:none;">
+                            é um dos planetas que fazem parte do Sistema Solar e é o  
+                        </p>
+                        <span> 
+                            Descubra mais em 
+                            <a href="https://www.nasa.gov/topics/earth/index.html">Nasa.gov</a>
+                        </span>
+                        
                     </div>
                     
-                    <a href="#">about</a>
-                    <a href="#">Curiosities</a>
+                    <button class="btn-content" onclick="showContentAbout()">About</button>
+                    <button class="btn-content" onclick="showContentCuri()">Curiosities</button>
                 </div>
             </main>
 
@@ -75,8 +83,20 @@
 
             <div id="info-cards">
                 <div class="card-item">
-                    <h3>Content title</h3>
-                    <h1>info Content</h1>
+                    <h3>Rotation time</h3>
+                    <span><h1>0.99</h1> days</span>
+                </div>
+                <div class="card-item">
+                    <h3>Radius</h3>
+                    <span><h1>6.371</h1> KM</span>
+                </div>
+                <div class="card-item">
+                    <h3>Avaerage Temp.</h3>
+                    <span><h1>16</h1>Cº</span>
+                </div>
+                <div class="card-item">
+                    <h3>Life</h3>
+                    <span><h1>Active</h1></span>
                 </div>
             </div>
         </div><!--Container End-->
