@@ -22,7 +22,7 @@ a{
 
 /* Paleta de cores / Colors */
 :root{
-    --color-font: #f1f1f1;
+    --color-font: #bbbbbb;
     --color-white: #fff;
     --color-black: rgb(22, 22, 22);
 }
@@ -54,7 +54,8 @@ a{
 #navigation #main-navigation li a{
     margin-left: 15px;
     font-size: 1rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-weight: bold;
     color: var(--color-font);
     padding: 10px;
     border: 2px solid transparent;
@@ -70,6 +71,44 @@ a{
     color: var(--color-white) !important;
     background-color: var(--color-black);
 }
+
+/* Content */
+
+#content{
+    display: flex;
+    margin-top: 20px;
+}
+
+.planet-side{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.planet-side > img{
+    width: 400px;
+    height: 100%;
+}
+
+.content-side{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-side > .info h1{
+    font-size: 3.5rem;
+    margin: 5px 0;
+}
+
+.content-side > .info p{
+    color: var(--color-font);
+    width: 75%;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
 
 
 
