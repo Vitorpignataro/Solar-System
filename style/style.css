@@ -1,0 +1,77 @@
+/* Configurações gerais e seletores */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 95vh;
+    background-image: url('../img/galaxy.jpg');
+    background-size: cover;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* Paleta de cores / Colors */
+:root{
+    --color-font: #f1f1f1;
+    --color-white: #fff;
+    --color-black: rgb(22, 22, 22);
+}
+
+/* Header */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    line-height: 20px;
+    margin-left: 40px;
+}
+
+.logo > a h1, .logo > a h4{
+    margin: 0;
+}
+
+
+/* Navigation */
+
+#navigation > #main-navigation{
+    display: flex;
+    margin: 30px 20px;
+}
+
+#navigation #main-navigation li a{
+    margin-left: 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--color-font);
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+#navigation #main-navigation li a:hover{
+    color: #d8d4de;
+}
+
+.menu_active {
+    border: 2px solid var(--color-white) !important;
+    border-radius: 2px;
+    color: var(--color-white) !important;
+    background-color: var(--color-black);
+}
+
+
+
+
+
