@@ -2,7 +2,8 @@
 html {
     height: 100%;
     overflow: hidden;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 90%);
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 90%); */
+    background-color: #000;
 }
 
 
@@ -30,6 +31,8 @@ a{
     --color-black: rgb(22, 22, 22);
     --color-btn-content: #4e0b68;
 }
+
+
 
 /* Header */
 #header{
@@ -764,6 +767,10 @@ a{
     }
 }
 
+
+.earth{
+    cursor: pointer;
+}
 
 
 

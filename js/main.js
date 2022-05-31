@@ -1,3 +1,4 @@
+
 /*
     Adicionar Jquery posteriormente
     Controles da navegação
@@ -49,6 +50,7 @@ function showContentCuri(){
     }
     
 }
+
 
 
 
